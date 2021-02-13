@@ -34,7 +34,7 @@ Some of my favourite work:
         ${(s, input) => items = input === 'hard' ? [] : items} .
   `
 ```
-___
+
 
 ### Simple programming language with Damas-Hindley-Milner type inference
 
@@ -54,7 +54,6 @@ Explain what and why.
   in (fact 5)
 ```
 
-___
 
 ### Three simple REPLs of various lambda calculi
 
@@ -71,7 +70,6 @@ Explain what and why.
   :: (forall A . A -> A -> A)
 ```
 
-___
 
 ### REPL for small and simple logic programming language inspired by Prolog
 
@@ -86,7 +84,6 @@ ___
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
-___
 
 ### Very simple compiler from Lisp-inspired programming language compiled to JS
 
@@ -101,7 +98,6 @@ ___
   )
 ```
 
-___
 
 ### Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
@@ -116,7 +112,6 @@ ___
   fact(10)
 ```
 
-___
 
 ### Core module of the Lambdulus - the λ-calculus evaluator/programming environment
 
