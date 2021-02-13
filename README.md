@@ -122,6 +122,8 @@ ___
 
 [repo](https://github.com/lambdulus/core) 
 
+![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend.png)
+
 <!--
 Insert some image of the frontend?
 -->
