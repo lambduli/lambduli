@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-I'am John and I'm interested in PL and Type Systems related stuff.
+#### I'am John and I'm interested in the PL and Type Systems related stuff.
 
-Some of my favourite work:
+## Some of my favourite work:
 
 ### JS DSL for implementating Deterministic Finite State Machines
 
@@ -35,6 +35,7 @@ Some of my favourite work:
   `
 ```
 
+<br/><br/>
 
 ### Simple programming language with Damas-Hindley-Milner type inference
 
@@ -54,6 +55,7 @@ Explain what and why.
   in (fact 5)
 ```
 
+<br/><br/>
 
 ### Three simple REPLs of various lambda calculi
 
@@ -70,6 +72,7 @@ Explain what and why.
   :: (forall A . A -> A -> A)
 ```
 
+<br/><br/>
 
 ### REPL for small and simple logic programming language inspired by Prolog
 
@@ -84,6 +87,7 @@ Explain what and why.
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
+<br/><br/>
 
 ### Very simple compiler from Lisp-inspired programming language compiled to JS
 
@@ -98,6 +102,7 @@ Explain what and why.
   )
 ```
 
+<br/><br/>
 
 ### Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
@@ -112,6 +117,7 @@ Explain what and why.
   fact(10)
 ```
 
+<br/><br/>
 
 ### Core module of the Lambdulus - the λ-calculus evaluator/programming environment
 
@@ -122,4 +128,10 @@ Explain what and why.
 <!--
 Insert some image of the frontend?
 -->
+
+<br/><br/>
+
+### Lambdulus Web Environment
+
+[repo](https://github.com/lambdulus/frontend)
 
