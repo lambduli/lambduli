@@ -1,8 +1,10 @@
 ### Hi there 👋
 
-#### I'am John and I'm interested in the PL and Type Systems related stuff.
+I'am John and I'm interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
+
+<br></br>
 
 ## Lambdulus
 
@@ -12,11 +14,19 @@
 
 Lambdulus is a tool for learning λ-calculus interactively. It runs online on any modern browser and enables you to to experience λ-calculus as a programming language.
 
+<!--
+TODO: insert screenshot of Lambdulus (factorial)
+-->
+
 <br></br>
 
 ### Core module of the Lambdulus
 
 [repo](https://github.com/lambdulus/core) 
+
+<!--
+TODO: remove this screenshot
+-->
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend.png)
 
@@ -32,7 +42,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online on an
   let
     zero = (\ n -> (#= (n, 0)))
   in let rec
-    fact n = if (zero n)
+    fact n =  if (zero n)
               then 1
               else (#* (n, (fact (#- (n, 1)))))
   in (fact 5)
@@ -49,8 +59,10 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online on an
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
+  
   times(z, _, z).
   times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+  
   fact(z, s(z)).
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
@@ -113,6 +125,10 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online on an
 
 
 [repo](https://github.com/Taskkill/dfsm-dsl)
+
+<!--
+TODO: change example to compute factorial too
+-->
 
 ```javascript
   dfsm`
