@@ -4,11 +4,7 @@ I'am John and I'm interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
 
-<br></br>
-
-## Lambdulus
-
-### Lambdulus Web Environment
+### Lambdulus
 
 [repo](https://github.com/lambdulus/frontend)
 
