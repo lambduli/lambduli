@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'am John and I'm interested in the PL and Type Systems related stuff.
+I am John and I am interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
 
