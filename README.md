@@ -14,21 +14,14 @@ I'am John and I'm interested in the PL and Type Systems related stuff.
 
 Lambdulus is a tool for learning λ-calculus interactively. It runs online on any modern browser and enables you to to experience λ-calculus as a programming language.
 
-<!--
-TODO: insert screenshot of Lambdulus (factorial)
--->
+![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
+
 
 <br></br>
 
 ### Core module of the Lambdulus
 
 [repo](https://github.com/lambdulus/core) 
-
-<!--
-TODO: remove this screenshot
--->
-
-![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend.png)
 
 <br/><br/>
 
