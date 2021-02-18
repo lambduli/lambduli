@@ -12,12 +12,10 @@ I'am John and I'm interested in the PL and Type Systems related stuff.
 
 [repo](https://github.com/lambdulus/frontend)
 
-Lambdulus is a tool for learning λ-calculus interactively. It runs online on any modern browser and enables you to to experience λ-calculus as a programming language.
+Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
-
-<br></br>
 
 ### Core module of the Lambdulus
 
@@ -119,29 +117,18 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online on an
 
 [repo](https://github.com/Taskkill/dfsm-dsl)
 
-<!--
-TODO: change example to compute factorial too
--->
-
 ```javascript
-  dfsm`
-    state default CON${true ? 'NECT' : 'TROLL'}ED
-    state OPENED
-    state PROCESSED
-    state RESETTED
+  let factorial = dfsm`
+  state default INIT
 
-    open CONNECTED -> OPENED .
+  compute
+    INIT -> ${(state, num) => num === 0 ? '1' : `${num}`}
+      ${(state, num) => num === 0 ? undefined : factorial.compute(num - 1)} .
 
-    add
-      OPENED -> OPENED
-        ${ (s, newItem) => items.push(newItem) } .
-
-    process
-      OPENED -> PROCESSED
-        ${ () => items } .
-
-    reset
-      PROCESSED -> ${(s, input) => input === 'hard' ? 'RESETTED' : 'OPENED'}
-        ${(s, input) => items = input === 'hard' ? [] : items} .
+  compute
+    ${state => state === 'INIT' ? 'NO' : state} -> ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
+      ${(state, num) => num === 0 ? state : factorial.compute(num - 1)} .
   `
+
+  factorial.compute(5)
 ```
