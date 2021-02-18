@@ -16,10 +16,12 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
-
+<!--
 ### Core module of the Lambdulus
 
-[repo](https://github.com/lambdulus/core) 
+[repo](https://github.com/lambdulus/core)
+
+-->
 
 <br/><br/>
 
@@ -43,7 +45,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 ## Monolog
 
-### REPL for small and simple logic programming language inspired by Prolog
+### Small logic programming language inspired by Prolog
 
 [repo](https://github.com/Taskkill/monolog)
 
