@@ -19,41 +19,39 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 <br>
 
-<div class="row" style="display: flex">
-  <div class="column" style="flex: 50%">
-    <a href="https://github.com/Taskkill/frea">Frea</a>
 
-    Simple programming language with Damas-Hindley-Milner type inference
+[Frea](https://github.com/Taskkill/frea)
 
-    ```haskell
-      let
-        zero = (\ n -> (#= (n, 0)))
-      in let rec
-        fact n =  if (zero n)
-                  then 1
-                  else (#* (n, (fact (#- (n, 1)))))
-      in (fact 5)
-    ```
-  </div>
-  <div class="column" style="flex: 50%">
-    <a href="https://github.com/Taskkill/monolog">Monolog</a>
+Simple programming language with Damas-Hindley-Milner type inference
 
-    Small logic programming language inspired by Prolog
+```haskell
+  let
+    zero = (\ n -> (#= (n, 0)))
+  in let rec
+    fact n =  if (zero n)
+              then 1
+              else (#* (n, (fact (#- (n, 1)))))
+  in (fact 5)
+```
 
-    ```prolog
-      plus(z, N, N).
-      plus(s(N), M, s(R)) :- plus(N, M, R).
-      
-      times(z, _, z).
-      times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
-      
-      fact(z, s(z)).
-      fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
-    ```
-  </div>
-</div>
+<br>
 
+[Monolog](https://github.com/Taskkill/monolog)
 
+Small logic programming language inspired by Prolog
+
+```prolog
+  plus(z, N, N).
+  plus(s(N), M, s(R)) :- plus(N, M, R).
+  
+  times(z, _, z).
+  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+  
+  fact(z, s(z)).
+  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+```
+
+<br>
 
 [SJS](https://github.com/Taskkill/sjs)
 
