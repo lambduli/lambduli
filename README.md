@@ -4,9 +4,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
 
-### Lambdulus
-
-[repo](https://github.com/lambdulus/frontend)
+[Lambdulus](https://github.com/lambdulus/frontend)
 
 Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
 
@@ -19,13 +17,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 -->
 
-<br/><br/>
+<br>
 
-## Frea
+[Frea](https://github.com/Taskkill/frea)
 
-### Simple programming language with Damas-Hindley-Milner type inference
-
-[repo](https://github.com/Taskkill/frea)
+Simple programming language with Damas-Hindley-Milner type inference
 
 ```haskell
   let
@@ -37,13 +33,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   in (fact 5)
 ```
 
-<br/><br/>
+<br>
 
-## Monolog
+[Monolog](https://github.com/Taskkill/monolog)
 
-### Small logic programming language inspired by Prolog
-
-[repo](https://github.com/Taskkill/monolog)
+Small logic programming language inspired by Prolog
 
 ```prolog
   plus(z, N, N).
@@ -56,13 +50,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
-<br/><br/>
+<br>
 
-## SJS
+[SJS](https://github.com/Taskkill/sjs)
 
-### Very simple compiler from Lisp-inspired programming language compiled to JS
-
-[repo](https://github.com/Taskkill/sjs)
+Very simple compiler from Lisp-inspired programming language compiled to JS
 
 ```lisp
   (define fact (n)
@@ -73,13 +65,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   )
 ```
 
-<br/><br/>
+<br>
 
-## FeenyML
+[FeenyML](https://github.com/Taskkill/FeenyML)
 
-### Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
-
-[repo](https://github.com/Taskkill/FeenyML)
+Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
 ```ml
   function fact (num) ->
@@ -90,14 +80,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   fact(10)
 ```
 
-<br/><br/>
+<br>
 
+[Lambdas](https://github.com/Taskkill/lambdas)
 
-## Lambdas
-
-### Three simple REPLs of various lambda calculi
-
-[repo](https://github.com/Taskkill/lambdas)
+Three simple REPLs of various lambda calculi
 
 ```
   [enter λ2 expression]
@@ -106,14 +93,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   :: (forall A . A -> A -> A)
 ```
 
-<br/><br/>
+<br>
 
-## DFSM-DSL
+[DFSM-DSL](https://github.com/Taskkill/dfsm-dsl)
 
-### JS DSL for implementating Deterministic Finite State Machines
-
-
-[repo](https://github.com/Taskkill/dfsm-dsl)
+JS DSL for implementating Deterministic Finite State Machines
 
 ```javascript
   let factorial = dfsm`
