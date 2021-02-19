@@ -4,9 +4,9 @@ I am John and I am interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
 
-#### [Lambdulus](https://github.com/lambdulus/frontend)
+### [Lambdulus](https://github.com/lambdulus/frontend)
 
-#### Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
+Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
@@ -18,7 +18,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 -->
 
 
-#### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
+### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
 
 ```haskell
   let
@@ -31,7 +31,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 ```
 
 
-#### [Monolog](https://github.com/Taskkill/monolog) - Small logic programming language inspired by Prolog
+### [Monolog](https://github.com/Taskkill/monolog) - Small logic programming language inspired by Prolog
 
 ```prolog
   plus(z, N, N).
@@ -45,7 +45,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 ```
 
 
-#### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language compiled to JS
+### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language compiled to JS
 
 ```lisp
   (define fact (n)
@@ -57,7 +57,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 ```
 
 
-#### [FeenyML](https://github.com/Taskkill/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
+### [FeenyML](https://github.com/Taskkill/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
 ```ml
   function fact (num) ->
@@ -69,7 +69,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 ```
 
 
-#### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs of various lambda calculi
+### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs of various lambda calculi
 
 ```
   [enter λ2 expression]
@@ -79,7 +79,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 ```
 
 
-#### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
+### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
 
 ```javascript
   let factorial = dfsm`
