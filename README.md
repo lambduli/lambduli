@@ -4,9 +4,9 @@ I am John and I am interested in the PL and Type Systems related stuff.
 
 ## Some of my favourite work:
 
-[Lambdulus](https://github.com/lambdulus/frontend)
+#### [Lambdulus](https://github.com/lambdulus/frontend)
 
-Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
+#### Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
@@ -16,8 +16,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 [repo](https://github.com/lambdulus/core)
 
 -->
-
-<br>
 
 
 #### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
@@ -32,7 +30,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   in (fact 5)
 ```
 
-<br>
 
 #### [Monolog](https://github.com/Taskkill/monolog) - Small logic programming language inspired by Prolog
 
@@ -47,7 +44,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
-<br>
 
 #### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language compiled to JS
 
@@ -60,7 +56,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   )
 ```
 
-<br>
 
 #### [FeenyML](https://github.com/Taskkill/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
@@ -73,7 +68,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   fact(10)
 ```
 
-<br>
 
 #### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs of various lambda calculi
 
@@ -84,7 +78,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   :: (forall A . A -> A -> A)
 ```
 
-<br>
 
 #### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
 
