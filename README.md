@@ -19,8 +19,8 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 <br>
 
-<div class="row">
-  <div class="column">
+<div class="row" style="display: flex">
+  <div class="column" style="flex: 50%">
     <a href="https://github.com/Taskkill/frea">Frea</a>
 
     Simple programming language with Damas-Hindley-Milner type inference
@@ -35,7 +35,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
       in (fact 5)
     ```
   </div>
-  <div class="column">
+  <div class="column" style="flex: 50%">
     <a href="https://github.com/Taskkill/monolog">Monolog</a>
 
     Small logic programming language inspired by Prolog
@@ -53,16 +53,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   </div>
 </div>
 
-<style>
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
-</style>
 
 
 [SJS](https://github.com/Taskkill/sjs)
