@@ -20,9 +20,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 <br>
 
 
-[Frea](https://github.com/Taskkill/frea)
-
-Simple programming language with Damas-Hindley-Milner type inference
+#### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
 
 ```haskell
   let
@@ -36,9 +34,7 @@ Simple programming language with Damas-Hindley-Milner type inference
 
 <br>
 
-[Monolog](https://github.com/Taskkill/monolog)
-
-Small logic programming language inspired by Prolog
+#### [Monolog](https://github.com/Taskkill/monolog) - Small logic programming language inspired by Prolog
 
 ```prolog
   plus(z, N, N).
@@ -53,9 +49,7 @@ Small logic programming language inspired by Prolog
 
 <br>
 
-[SJS](https://github.com/Taskkill/sjs)
-
-Very simple compiler from Lisp-inspired programming language compiled to JS
+#### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language compiled to JS
 
 ```lisp
   (define fact (n)
@@ -68,9 +62,7 @@ Very simple compiler from Lisp-inspired programming language compiled to JS
 
 <br>
 
-[FeenyML](https://github.com/Taskkill/FeenyML)
-
-Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
+#### [FeenyML](https://github.com/Taskkill/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
 ```ml
   function fact (num) ->
@@ -83,9 +75,7 @@ Interpreter and (incomplete) VM for small programming language inspired by Feeny
 
 <br>
 
-[Lambdas](https://github.com/Taskkill/lambdas)
-
-Three simple REPLs of various lambda calculi
+#### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs of various lambda calculi
 
 ```
   [enter λ2 expression]
@@ -96,9 +86,7 @@ Three simple REPLs of various lambda calculi
 
 <br>
 
-[DFSM-DSL](https://github.com/Taskkill/dfsm-dsl)
-
-JS DSL for implementating Deterministic Finite State Machines
+#### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
 
 ```javascript
   let factorial = dfsm`
