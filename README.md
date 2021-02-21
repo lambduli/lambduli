@@ -54,6 +54,8 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
       (* n (fact (- n 1)))
     )
   )
+
+  (fact 5)
 ```
 
 
@@ -65,7 +67,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
     then 1
     else num * fact(num - 1);
 
-  fact(10)
+  fact(5)
 ```
 
 
@@ -93,8 +95,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
     ${state => state === 'INIT' ? 'NO' : state} ->
       ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
       
-      ${(state, num) => num === 0 ? state : factorial.compute(num - 1)} .
-  `
+      ${(state, num) => num === 0 ? state : factorial.compute(num - 1)} .`
 
   factorial.compute(5)
 ```
