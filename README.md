@@ -10,13 +10,6 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
-<!--
-### Core module of the Lambdulus
-
-[repo](https://github.com/lambdulus/core)
-
--->
-
 
 ### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
 
