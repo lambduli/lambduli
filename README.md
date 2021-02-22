@@ -35,6 +35,10 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   
   fact(z, s(z)).
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+
+  :check
+
+  fact(s(s(s(s(s(z))))), F)
 ```
 
 
