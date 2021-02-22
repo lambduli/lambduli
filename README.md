@@ -6,7 +6,7 @@ I am John and I am interested in the PL and Type Systems related stuff.
 
 ### [Lambdulus](https://github.com/lambdulus/frontend)
 
-Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to to experience λ-calculus as a programming language.
+Lambdulus is a tool for learning λ-calculus interactively. It runs online in any modern browser and enables you to experience λ-calculus as a programming language.
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
