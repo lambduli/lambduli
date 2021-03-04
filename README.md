@@ -68,7 +68,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ```
 
 
-### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs of various lambda calculi
+### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs for `λ`, `λ->`, and `λ2`
 
 ```
   [enter λ2 expression]
