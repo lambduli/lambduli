@@ -72,9 +72,8 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 ```
   [enter λ2 expression]
-  :$ (\ a : forall A . A -> A -> A . a) (/ B . (\t : B . (\f : B . t)))
-  [command or expression]:$ :type
-  :: (forall A . A -> A -> A)
+  λ2 >> (\ a : forall A . A -> A -> A . a) (/ B . (\t : B . (\f : B . t)))
+        (λ a : (forall A . A -> A -> A) . a) (Λ B . (λ t : B . (λ f : B . t))) :: (forall A . A -> A -> A)
 ```
 
 
