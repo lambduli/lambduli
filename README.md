@@ -15,12 +15,12 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 ```haskell
   let
-    zero = (\ n -> (n == 0))
-    dec = (\ n -> n - 1)
-  in let rec
+    zero n = (n == 0)
+    dec n = (n - 1)
+  rec
     fact n =  if (zero n)
               then 1
-              else (n * (fact (dec 1)))
+              else (n * (fact (dec n)))
   in (fact 5)
 ```
 
