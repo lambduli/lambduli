@@ -68,7 +68,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ```
 
 
-### [Lambda-pie](https://github.com/Taskkill/lambda-pie) - Simple REPL for `λ->` and `λΠ`
+### [Lambda-pie](https://github.com/Taskkill/lambda-pie) - Three better simple REPLs for `λ->`, `λ2`, and `λΠ`
 
 ```
   λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
