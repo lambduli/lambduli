@@ -1,8 +1,4 @@
-### Hi there 👋
-
-I am John and I am interested in the PL and Type Systems related stuff.
-
-## :sunflower: :deciduous_tree: :tulip: Welcome to my PL garden :rose: :seedling: :hibiscus: :herb:
+## :sunflower: :deciduous_tree: :tulip: :blossom: Welcome to my PL garden :rose: :seedling: :hibiscus: :herb:
 
 ### [Lambdulus](https://github.com/lambdulus/frontend)
 
