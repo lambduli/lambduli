@@ -2,7 +2,7 @@
 
 I am John and I am interested in the PL and Type Systems related stuff.
 
-## Some of my favourite work:
+## :sunflower: :deciduous_tree: :tulip: Welcome to my PL garden :rose: :seedling: :hibiscus: :herb:
 
 ### [Lambdulus](https://github.com/lambdulus/frontend)
 
