@@ -14,9 +14,9 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference
 
 ```haskell
-  data Result
-    = Nothing
-    | Some Int
+  data Result a
+    = None
+    | Some a
 
   let
     zero n = (n == 0)
