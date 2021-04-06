@@ -17,7 +17,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
   let
     zero n = (n == 0)
     dec n = (n - 1)
-    fact n =  if (zero n)
+    rec fact n =  if (zero n)
               then 1
               else (n * (fact (dec n)))
   in (Some (fact 5))
