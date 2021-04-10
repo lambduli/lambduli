@@ -42,7 +42,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ```
 
 
-### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language compiled to JS
+### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language targetting JS
 
 ```lisp
   (define fact (n)
