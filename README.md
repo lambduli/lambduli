@@ -80,16 +80,16 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
 
 ### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs for `λ`, `λ->`, and `λ2`
-
+<!--
 ```
   [enter λ2 expression]
   λ2 >> (\ a : forall A . A -> A -> A . a) (/ B . (\t : B . (\f : B . t)))
         (λ a : (forall A . A -> A -> A) . a) (Λ B . (λ t : B . (λ f : B . t))) :: (forall A . A -> A -> A)
 ```
-
+-->
 
 ### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
-
+<!--
 ```javascript
   let factorial = dfsm`
   state default INIT
@@ -106,3 +106,4 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 
   factorial.compute(5)
 ```
+-->
