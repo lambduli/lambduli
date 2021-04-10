@@ -7,7 +7,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
 
-### [Frea](https://github.com/Taskkill/frea) - Simple programming language with Damas-Hindley-Milner type inference and Lazy evaluation
+### [Frea](https://github.com/Taskkill/frea) - Small programming language with HM type inference, higher kinded types, and lazy evaluation
 
 ```haskell
   data Result a
