@@ -10,17 +10,20 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs online in an
 ### [Frea](https://github.com/Taskkill/frea) - Small programming language with HM type inference, higher kinded types, and lazy evaluation
 
 ```haskell
-  data Result a
-    = None
-    | Some a
+  module Main where
 
-  let
-    zero n = (n == 0)
-    dec n = (n - 1)
-    rec fact n =  if (zero n)
-              then 1
-              else (n * (fact (dec n)))
-  in (Some (fact 5))
+  { data Result a
+      = None
+      | Some a
+
+  ; let
+    { zero n = (n == 0)
+    ; dec n = (n - 1)
+    ; rec fact n =  if (zero n)
+                    then 1
+                    else (n * (fact (dec n)))
+    } in (Some (fact 5))
+  }
 ```
 
 
