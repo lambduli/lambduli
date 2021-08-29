@@ -91,7 +91,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 -->
 
-### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementating Deterministic Finite State Machines
+### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementing Deterministic Finite State Machines
 <!--
 ```javascript
   let factorial = dfsm`
