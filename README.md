@@ -7,7 +7,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
 
-### [Frea](https://github.com/Taskkill/frea) - Small programming language with HM type inference, higher kinded types, and lazy evaluation
+### [Frea](https://github.com/lambduli/frea) - Small programming language with HM type inference, higher kinded types, and lazy evaluation
 
 ```haskell
   module Main where
@@ -27,7 +27,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Monolog](https://github.com/Taskkill/monolog) - Small logic programming language inspired by Prolog
+### [Monolog](https://github.com/lambduli/monolog) - Small logic programming language inspired by Prolog
 
 ```prolog
   plus(z, N, N).
@@ -45,7 +45,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [SJS](https://github.com/Taskkill/sjs) - Very simple compiler from Lisp-inspired programming language targetting JS
+### [SJS](https://github.com/lambduli/sjs) - Very simple compiler from Lisp-inspired programming language targetting JS
 
 ```lisp
   (define fact (n)
@@ -59,7 +59,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [FeenyML](https://github.com/Taskkill/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
+### [FeenyML](https://github.com/lambduli/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
 
 ```ml
   function fact (num) ->
@@ -71,7 +71,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Lambda-pie](https://github.com/Taskkill/lambda-pie) - Three better simple REPLs for `λ->`, `λ2`, and `λΠ`
+### [Lambda-pie](https://github.com/lambduli/lambda-pie) - Three better simple REPLs for `λ->`, `λ2`, and `λΠ`
 
 ```
   λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
@@ -82,7 +82,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Lambdas](https://github.com/Taskkill/lambdas) - Three simple REPLs for `λ`, `λ->`, and `λ2`
+### [Lambdas](https://github.com/lambduli/lambdas) - Three simple REPLs for `λ`, `λ->`, and `λ2`
 <!--
 ```
   [enter λ2 expression]
@@ -91,7 +91,7 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 -->
 
-### [DFSM-DSL](https://github.com/Taskkill/dfsm-dsl) - JS DSL for implementing Deterministic Finite State Machines
+### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl) - JS DSL for implementing Deterministic Finite State Machines
 <!--
 ```javascript
   let factorial = dfsm`
