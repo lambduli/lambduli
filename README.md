@@ -7,6 +7,20 @@
 
 I am working on a new exciting thing! It is a small programming language inspired by Haskell. It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
+### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
+
+Minilog is an implementation of a small relational programming language. The main purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
+```prolog
+  plus(z, N, N).
+  plus(s(N), M, s(R)) :- plus(N, M, R).
+
+  times(z, _, z).
+  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+
+  fact(z, s(z)).
+  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+```
+
 ### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
 Lambdulus is a tool for learning λ-calculus interactively. It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
