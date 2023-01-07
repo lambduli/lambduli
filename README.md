@@ -9,16 +9,15 @@
 I am working on a new exciting thing! It is a small programming language inspired by Haskell. It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
 
+
+## What I have grown :herb: :evergreen_tree:
+
 ### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
 Lambdulus is a tool for learning λ-calculus interactively. It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
 
 ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
 
-
-----
-
-## What I have grown :herb: :evergreen_tree:
 
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
@@ -83,7 +82,7 @@ Implemented as an AST interpreter in Ruby.
 
 ### [SJS](https://github.com/lambduli/sjs)
 
-Very simple compiler from Lisp-inspired programming language targetting JS.
+Very simple compiler from a Lisp-inspired programming language targetting JS.
 Implemented as a parser and a trivial code-gen in Scala.
 
 <!--
@@ -102,7 +101,7 @@ Implemented as a parser and a trivial code-gen in Scala.
 
 ### [FeenyML](https://github.com/lambduli/FeenyML)
 
-Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML.
+Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
 Writen in Haskell using Alex and Happy.
 
 ```ml
