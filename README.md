@@ -3,9 +3,22 @@
 
 ## What I am growing now :seedling:
 
+
 ### [Glask](https://github.com/glask/glask) :blossom:
 
 I am working on a new exciting thing! It is a small programming language inspired by Haskell. It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+
+
+### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
+
+Lambdulus is a tool for learning λ-calculus interactively. It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
+
+![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
+
+
+----
+
+## What I have grown :herb: :evergreen_tree:
 
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
@@ -21,18 +34,11 @@ Minilog is an implementation of a small relational programming language. The mai
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
-### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
-Lambdulus is a tool for learning λ-calculus interactively. It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
+### [Frea](https://github.com/lambduli/frea)
 
-![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
-
-
-----
-
-## What I have grown :herb: :evergreen_tree:
-
-### [Frea](https://github.com/lambduli/frea) - Small programming language with HM type inference, higher kinded types, and lazy evaluation
+Small programming language with HM type inference, higher kinded types, and lazy evaluation.
+Implemented as an AST interpreter in Haskell.
 
 ```haskell
   module Main where
@@ -52,8 +58,12 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Monolog](https://github.com/lambduli/monolog) - Small logic programming language inspired by Prolog
+### [Monolog](https://github.com/lambduli/monolog)
 
+Small logic programming language inspired by Prolog.
+Implemented as an AST interpreter in Ruby.
+
+<!--
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
@@ -68,10 +78,15 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 
   fact(s(s(s(s(s(z))))), F)
 ```
+-->
 
 
-### [SJS](https://github.com/lambduli/sjs) - Very simple compiler from Lisp-inspired programming language targetting JS
+### [SJS](https://github.com/lambduli/sjs)
 
+Very simple compiler from Lisp-inspired programming language targetting JS.
+Implemented as a parser and a trivial code-gen in Scala.
+
+<!--
 ```lisp
   (define fact (n)
     (if (or (= n 0) (= n 1))
@@ -82,9 +97,13 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 
   (fact 5)
 ```
+-->
 
 
-### [FeenyML](https://github.com/lambduli/FeenyML) - Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML
+### [FeenyML](https://github.com/lambduli/FeenyML)
+
+Interpreter and (incomplete) VM for small programming language inspired by Feeny and ML.
+Writen in Haskell using Alex and Happy.
 
 ```ml
   function fact (num) ->
@@ -96,7 +115,9 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Lambda-pie](https://github.com/lambduli/lambda-pie) - Three better simple REPLs for `λ->`, `λ2`, and `λΠ`
+### [Lambda-pie](https://github.com/lambduli/lambda-pie)
+
+Three better simple REPLs for `λ->`, `λ2`, and `λΠ` written in Haskell.
 
 ```
   λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
@@ -107,31 +128,11 @@ Lambdulus is a tool for learning λ-calculus interactively. It runs localy in an
 ```
 
 
-### [Lambdas](https://github.com/lambduli/lambdas) - Three simple REPLs for `λ`, `λ->`, and `λ2`
-<!--
-```
-  [enter λ2 expression]
-  λ2 >> (\ a : forall A . A -> A -> A . a) (/ B . (\t : B . (\f : B . t)))
-        (λ a : (forall A . A -> A -> A) . a) (Λ B . (λ t : B . (λ f : B . t))) :: (forall A . A -> A -> A)
-```
--->
+### [Lambdas](https://github.com/lambduli/lambdas)
 
-### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl) - JS DSL for implementing Deterministic Finite State Machines
-<!--
-```javascript
-  let factorial = dfsm`
-  state default INIT
+Three simple REPLs for `λ`, `λ->`, and `λ2` written in Haskell.
 
-  compute
-    INIT -> ${(state, num) => num === 0 ? '1' : `${num}`}
-      ${(state, num) => num === 0 ? undefined : factorial.compute(num - 1)} .
 
-  compute
-    ${state => state === 'INIT' ? 'NO' : state} ->
-      ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
-      
-      ${(state, num) => num === 0 ? state : factorial.compute(num - 1)} .`
+### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
 
-  factorial.compute(5)
-```
--->
+JS DSL for implementing Deterministic Finite State Machines.
