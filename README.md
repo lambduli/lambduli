@@ -4,7 +4,7 @@
 ## What I am growing now :seedling:
 
 
-### [Glask](https://github.com/glask/glask) :blossom:
+### [Glask](https://github.com/lambduli/glask) :blossom:
 
 I am working on a new exciting thing! It is a small programming language inspired by Haskell. It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
