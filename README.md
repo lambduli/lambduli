@@ -6,7 +6,9 @@
 
 ### [Glask](https://github.com/lambduli/glask) :blossom:
 
-I am working on a new exciting thing! It is a small programming language inspired by Haskell. It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+I am working on a new exciting thing!
+It is a small programming language inspired by Haskell.
+It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
 
 
@@ -14,14 +16,16 @@ I am working on a new exciting thing! It is a small programming language inspire
 
 ### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
-Lambdulus is a tool for learning λ-calculus interactively. It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
+Lambdulus is a tool for learning λ-calculus interactively.
+It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
 
-![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png)
+<!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
 
 
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
-Minilog is an implementation of a small relational programming language. The main purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
+Minilog is an implementation of a small relational programming language.
+The main purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
