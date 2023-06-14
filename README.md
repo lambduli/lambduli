@@ -59,13 +59,13 @@ Implemented as an AST interpreter in Haskell.
     } in (Some (fact 5))
   }
 ```
-
+<!--
 
 ### [Monolog](https://github.com/lambduli/monolog)
 
 Small logic programming language inspired by Prolog.
 Implemented as an AST interpreter in Ruby.
-
+-->
 <!--
 ```prolog
   plus(z, N, N).
@@ -83,12 +83,12 @@ Implemented as an AST interpreter in Ruby.
 ```
 -->
 
-
+<!--
 ### [SJS](https://github.com/lambduli/sjs)
 
 Very simple compiler from a Lisp-inspired programming language targetting JS.
 Implemented as a parser and a trivial code-gen in Scala.
-
+-->
 <!--
 ```lisp
   (define fact (n)
@@ -102,7 +102,7 @@ Implemented as a parser and a trivial code-gen in Scala.
 ```
 -->
 
-
+<!--
 ### [FeenyML](https://github.com/lambduli/FeenyML)
 
 Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
@@ -116,7 +116,7 @@ Writen in Haskell using Alex and Happy.
 
   fact(5)
 ```
-
+-->
 
 ### [Lambda-pie](https://github.com/lambduli/lambda-pie)
 
@@ -135,7 +135,8 @@ Three better simple REPLs for `λ->`, `λ2`, and `λΠ` written in Haskell.
 
 Three simple REPLs for `λ`, `λ->`, and `λ2` written in Haskell.
 
-
+<!--
 ### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
 
 JS DSL for implementing Deterministic Finite State Machines.
+-->
