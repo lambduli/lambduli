@@ -38,6 +38,16 @@ The main purpose of it is to present a simple abstract machine that can be easil
 ```
 
 
+### [Plover](https://github.com/lambduli/plover) :rose:
+
+Plover is an implementation of a small automated theorem prover based on relational language.
+The main idea is to replace *Minilog's* search strategy with a complete one.
+```prolog
+  nat(s(A)) :- inf(A).
+  nat(z).
+```
+
+
 ### [Frea](https://github.com/lambduli/frea)
 
 Small programming language with HM type inference, higher kinded types, and lazy evaluation.
