@@ -40,7 +40,7 @@ The main purpose of it is to present a simple abstract machine that can be easil
 
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
-Plover is an implementation of a small automated theorem prover based on relational language.
+Plover is an implementation of a small automated theorem prover based on a relational language.
 The main idea is to replace *Minilog's* search strategy with a complete one.
 ```prolog
   nat(s(A)) :- inf(A).
