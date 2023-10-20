@@ -25,7 +25,7 @@ I am hoping to make the project public one day.
 I am currently implementing a small automated theorem prover for _First Order Logic_ built on *resolution*.
 
 It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
-The goal is not to make it real-world applicable in any way, just to explore the concepts related to the _resolution_ and learn more about logic.
+It is not my goal to make it real-world applicable in any way, just to explore the concepts related to the _resolution_ and learn more about logic.
 
 I hope to publish a detailed write-up once the project is ready to go public.
 
