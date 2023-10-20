@@ -88,8 +88,8 @@ The main difference the complete search strategy makes is that the language/syst
 
 ### [Frea](https://github.com/lambduli/frea) :chestnut:
 
-Small programming language with HM type inference, higher-kinded types, and lazy evaluation.
-Implemented as an AST interpreter in Haskell [](https://img.shields.io/badge/Haskell-5D4F85.svg?style=for-the-badge&logo=Haskell&logoColor=white).
+Small programming language with HM type inference, higher kinded types, and lazy evaluation.
+Implemented as an AST interpreter in Haskell.
 
 It's one of my first _larger_ projects. I wanted to learn about Hindley-Milner type inference and how to implement parametric polymorphism both for functions and data types. Additionally, I learned a bit about laziness.
 
