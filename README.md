@@ -9,15 +9,25 @@ I like to write about the things I learn.
 ## What I am growing now :seedling:
 
 
-### [Glask](https://github.com/lambduli/glask) :blossom:
+### [Glask](https://github.com/lambduli/glask) :blossom: :cactus:
 
-I am working on a new exciting thing!
+Glask is my current, long-term project.
 It is a small programming language inspired by Haskell.
 It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
 I have already built a pretty large part of that as a part of my master's thesis.
 At this point, I am reworking it from the ground up, formalizing the type system, and learning more about types.
 I am hoping to make the project public one day.
+
+
+### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
+
+I am currently implementing a small automated theorem prover for _First Order Logic_ built on *resolution*.
+
+It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
+The goal is not to make it real-world applicable in any way, just to explore the concepts related to the _resolution_ and learn more about logic.
+
+I hope to publish a detailed write-up once the project is ready to go public.
 
 
 ## What I have grown :herb: :evergreen_tree:
@@ -42,6 +52,12 @@ The primary purpose of it is to present a simple abstract machine that can be ea
 I have designed the abstract machine and written a description of it for (not only) my students to learn about how such a language works.
 It is meant to inspire and offer a starting point to them should they decide to implement a small subset of Prolog as their course project.
 
+_Minilog_ is not the first project in a line of relational/logic languages.
+In the past, I've implemented a small relational language [Monilog](https://github.com/lambduli/monolog).
+Back then, I didn't know how to implement the _unification_ in a sensible way.
+So, while the _Minilog_ implements unification according to _Martelli and Montanari_,
+the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
+
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
@@ -59,7 +75,7 @@ It is meant to inspire and offer a starting point to them should they decide to 
 Plover is an implementation of a small automated theorem prover based on a relational language.
 The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
 
-It is the first stop in my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
+It is the first step in my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
 It's as small as _Minilog_.
 
 The main difference the complete search strategy makes is that the language/system can productively answer queries like `nat(A).` for a knowledge base like the following:
@@ -70,7 +86,7 @@ The main difference the complete search strategy makes is that the language/syst
 ```
 
 
-### [Frea](https://github.com/lambduli/frea)
+### [Frea](https://github.com/lambduli/frea) :chestnut:
 
 Small programming language with HM type inference, higher-kinded types, and lazy evaluation.
 Implemented as an AST interpreter in Haskell [](https://img.shields.io/badge/Haskell-5D4F85.svg?style=for-the-badge&logo=Haskell&logoColor=white).
