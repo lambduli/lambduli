@@ -1,5 +1,10 @@
 # :sunflower: :deciduous_tree: :tulip: :blossom: Welcome to my PL garden :rose: :seedling: :hibiscus: :herb:
 
+I think type systems, type theory, logic, and formal reasoning are really interesting topics.
+I like to build small programming languages, theorem provers, and other tools for learning PLT-related concepts.
+
+I like to write about the things I learn.
+
 
 ## What I am growing now :seedling:
 
@@ -10,14 +15,21 @@ I am working on a new exciting thing!
 It is a small programming language inspired by Haskell.
 It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
+I have already built a pretty large part of that as a part of my master's thesis.
+At this point, I am reworking it from the ground up, formalizing the type system, and learning more about types.
+I am hoping to make the project public one day.
 
 
 ## What I have grown :herb: :evergreen_tree:
 
-### [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
+### :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
 Lambdulus is a tool for learning λ-calculus interactively.
-It runs localy in any modern browser and enables you to experience λ-calculus as a programming language.
+It runs locally in any modern browser and enables you to experience λ-calculus as a programming language.
+
+I have a strong appreciation for teaching tools.
+This one is the first one I developed.
+It's being used at FIT CTU in Prague for teaching λ-calculus in a course on programming paradigms.
 
 <!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
 
@@ -25,7 +37,11 @@ It runs localy in any modern browser and enables you to experience λ-calculus a
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
 Minilog is an implementation of a small relational programming language.
-The main purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
+The primary purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
+
+I have designed the abstract machine and written a description of it for (not only) my students to learn about how such a language works.
+It is meant to inspire and offer a starting point to them should they decide to implement a small subset of Prolog as their course project.
+
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
@@ -41,7 +57,13 @@ The main purpose of it is to present a simple abstract machine that can be easil
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
 Plover is an implementation of a small automated theorem prover based on a relational language.
-The main idea is to replace *Minilog's* search strategy with a complete one.
+The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
+
+It is the first stop in my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
+It's as small as _Minilog_.
+
+The main difference the complete search strategy makes is that the language/system can productively answer queries like `nat(A).` for a knowledge base like the following:
+
 ```prolog
   nat(s(N)) :- nat(N).
   nat(z).
@@ -50,8 +72,13 @@ The main idea is to replace *Minilog's* search strategy with a complete one.
 
 ### [Frea](https://github.com/lambduli/frea)
 
-Small programming language with HM type inference, higher kinded types, and lazy evaluation.
-Implemented as an AST interpreter in Haskell.
+Small programming language with HM type inference, higher-kinded types, and lazy evaluation.
+Implemented as an AST interpreter in Haskell [](https://img.shields.io/badge/Haskell-5D4F85.svg?style=for-the-badge&logo=Haskell&logoColor=white).
+
+It's one of my first _larger_ projects. I wanted to learn about Hindley-Milner type inference and how to implement parametric polymorphism both for functions and data types. Additionally, I learned a bit about laziness.
+
+Originally, the language used to treat recursion on terms very explicitly. There was a `fix` language construct.
+Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
 ```haskell
   module Main where
