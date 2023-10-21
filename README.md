@@ -3,7 +3,7 @@
 I think type systems, type theory, logic, and formal reasoning are really interesting topics.
 I like to build small programming languages, theorem provers, and other tools for learning PLT-related concepts.
 
-I like to write about the things I learn.
+I sometimes write about the things I learn.
 
 
 ## What I am growing now :seedling:
