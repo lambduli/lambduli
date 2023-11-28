@@ -6,7 +6,7 @@ I like to build small programming languages, theorem provers, and other tools fo
 I sometimes write about the things I learn.
 
 
-## What I am growing now :seedling:
+## What I am growing now (in private) :seedling:
 
 
 ### [Glask](https://github.com/lambduli/glask) :blossom: :cactus:
