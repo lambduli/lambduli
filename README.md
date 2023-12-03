@@ -46,10 +46,10 @@ I'd like to publish a somewhat detailed write-up soon.
 
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
-Plover is an implementation of a small automated theorem prover based on a relational language.
+Plover is a small automated theorem prover based on a relational language like *Prolog*.
 The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
 
-It is the first step on my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
+It serves as the first step on my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
 It's as small as _Minilog_.
 
 The main difference the complete search strategy makes is that the language can productively answer queries like `nat(A).` for a knowledge base like the following:
