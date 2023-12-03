@@ -20,16 +20,6 @@ At this point, I am reworking it from the ground up, formalizing the type system
 I am hoping to make the project public one day.
 
 
-### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
-
-I am currently implementing a small automated theorem prover for _First Order Logic_ built on *resolution*.
-
-It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
-It is not my goal to make it real-world applicable in any way, just to explore the concepts related to the _resolution_ and learn more about logic.
-
-I hope to publish a detailed write-up once the project is ready to go public.
-
-
 ## What I have grown :herb: :evergreen_tree:
 
 ### :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
@@ -44,6 +34,32 @@ It's being used at FIT CTU in Prague for teaching λ-calculus in a course on pro
 <!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
 
 
+### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
+
+Resin is a small automated theorem prover for _First Order Logic_ built on *resolution*.
+
+It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
+It is not my goal to make it real-world applicable at all. I just want to explore the concepts related to the _resolution_ and learn more about logic.
+
+I'd like to publish a somewhat detailed write-up soon.
+
+
+### [Plover](https://github.com/lambduli/plover) :rose:
+
+Plover is an implementation of a small automated theorem prover based on a relational language.
+The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
+
+It is the first step on my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
+It's as small as _Minilog_.
+
+The main difference the complete search strategy makes is that the language can productively answer queries like `nat(A).` for a knowledge base like the following:
+
+```prolog
+  nat(s(N)) :- nat(N).
+  nat(z).
+```
+
+
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
 Minilog is an implementation of a small relational programming language.
@@ -54,7 +70,7 @@ It is meant to inspire and offer a starting point to them should they decide to 
 
 _Minilog_ is not the first project in a line of relational/logic languages.
 In the past, I've implemented a small relational language [Monolog](https://github.com/lambduli/monolog).
-Back then, I didn't know how to implement the _unification_ in a sensible way.
+But back then, I didn't know how to implement the _unification_ in a sensible way.
 So, while the _Minilog_ implements unification according to _Martelli and Montanari_,
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
 
@@ -70,25 +86,9 @@ the first project keeps around sort of a _unification context_ making it very im
 ```
 
 
-### [Plover](https://github.com/lambduli/plover) :rose:
-
-Plover is an implementation of a small automated theorem prover based on a relational language.
-The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
-
-It is the first step in my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
-It's as small as _Minilog_.
-
-The main difference the complete search strategy makes is that the language/system can productively answer queries like `nat(A).` for a knowledge base like the following:
-
-```prolog
-  nat(s(N)) :- nat(N).
-  nat(z).
-```
-
-
 ### [Frea](https://github.com/lambduli/frea) :chestnut:
 
-Small programming language with HM type inference, higher kinded types, and lazy evaluation.
+Small programming language with HM type inference, higher-kinded types, and lazy evaluation.
 Implemented as an AST interpreter in Haskell.
 
 It's one of my first _larger_ projects. I wanted to learn about Hindley-Milner type inference and how to implement parametric polymorphism both for functions and data types. Additionally, I learned a bit about laziness.
