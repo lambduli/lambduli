@@ -36,7 +36,7 @@ It's being used at FIT CTU in Prague for teaching λ-calculus in a course on pro
 
 ### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
 
-Resin is a small automated theorem prover for _First Order Logic_ built on *resolution*.
+Resin is a small automated theorem prover for _First Order CLassical Logic_ built on *resolution*.
 
 It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
 It is not my goal to make it real-world applicable at all. I just want to explore the concepts related to the _resolution_ and learn more about logic.
