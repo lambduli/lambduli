@@ -74,7 +74,10 @@ But back then, I didn't know how to implement the _unification_ in a sensible wa
 So, while the _Minilog_ implements unification according to _Martelli and Montanari_,
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
 
-```prolog
+<details>
+  <summary>Show Code Example</summary>
+  
+  ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
 
@@ -83,7 +86,8 @@ the first project keeps around sort of a _unification context_ making it very im
 
   fact(z, s(z)).
   fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
-```
+  ```
+</details>
 
 
 ### [Frea](https://github.com/lambduli/frea) :chestnut:
@@ -97,7 +101,7 @@ Originally, the language used to treat recursion on terms very explicitly. There
 Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
 <details>
-  <summary>Show example code</summary>
+  <summary>Show Code Example</summary>
   
   ```haskell
   module Main where
@@ -114,7 +118,7 @@ Eventually, I replaced the `fix` with an implicit recursion. The type-checker fi
                     else (n * (fact (dec n)))
     } in (Some (fact 5))
   }
-```
+  ```
 </details>
 
 
