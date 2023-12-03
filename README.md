@@ -149,59 +149,59 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 <details>
   <summary>Show the Archive</summary>
 
-#### [Monolog](https://github.com/lambduli/monolog)
-
-Small logic programming language inspired by Prolog.
-Implemented as an AST interpreter in Ruby.
-
-```prolog
-  plus(z, N, N).
-  plus(s(N), M, s(R)) :- plus(N, M, R).
+  #### [Monolog](https://github.com/lambduli/monolog)
   
-  times(z, _, z).
-  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+  Small logic programming language inspired by Prolog.
+  Implemented as an AST interpreter in Ruby.
   
-  fact(z, s(z)).
-  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
-
-  :check
-
-  fact(s(s(s(s(s(z))))), F)
-```
-
-#### [SJS](https://github.com/lambduli/sjs)
-
-Very simple compiler from a Lisp-inspired programming language targetting JS.
-Implemented as a parser and a trivial code-gen in Scala.
-
-```lisp
-  (define fact (n)
-    (if (or (= n 0) (= n 1))
-      1
-      (* n (fact (- n 1)))
+  ```prolog
+    plus(z, N, N).
+    plus(s(N), M, s(R)) :- plus(N, M, R).
+    
+    times(z, _, z).
+    times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+    
+    fact(z, s(z)).
+    fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+  
+    :check
+  
+    fact(s(s(s(s(s(z))))), F)
+  ```
+  
+  #### [SJS](https://github.com/lambduli/sjs)
+  
+  Very simple compiler from a Lisp-inspired programming language targetting JS.
+  Implemented as a parser and a trivial code-gen in Scala.
+  
+  ```lisp
+    (define fact (n)
+      (if (or (= n 0) (= n 1))
+        1
+        (* n (fact (- n 1)))
+      )
     )
-  )
-
-  (fact 5)
-```
-
-
-#### [FeenyML](https://github.com/lambduli/FeenyML)
-
-Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML. Part of my course-work.
-
-```ml
-  function fact (num) ->
-    if num == 0
-    then 1
-    else num * fact(num - 1);
-
-  fact(5)
-```
-
-
-#### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
-
-JS DSL for implementing Deterministic Finite State Machines using string template literal.
+  
+    (fact 5)
+  ```
+  
+  
+  #### [FeenyML](https://github.com/lambduli/FeenyML)
+  
+  Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML. Part of my course-work.
+  
+  ```ml
+    function fact (num) ->
+      if num == 0
+      then 1
+      else num * fact(num - 1);
+  
+    fact(5)
+  ```
+  
+  
+  #### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
+  
+  JS DSL for implementing Deterministic Finite State Machines using string template literal.
 
 </details>
