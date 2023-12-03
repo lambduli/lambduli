@@ -149,6 +149,7 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 <details>
   <summary>Show the Archive</summary>
 
+  <br/>
   All except the last one were done as a semestral project or a course-work during my master's.
   The last one was just a little thing I did while on a voice call with a friend talking about JavaScript.
 
@@ -174,7 +175,7 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   
   #### [SJS](https://github.com/lambduli/sjs)
 
-  Very simple compiler from a Lisp-inspired programming language targetting JS.
+  A simple toy compiler from a Lisp-inspired programming language targetting JS.
   Implemented as a parser and a trivial code-gen in Scala.
   
   ```lisp
