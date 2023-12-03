@@ -76,7 +76,7 @@ the first project keeps around sort of a _unification context_ making it very im
 
 <details>
   <summary>Show Code Example</summary>
-  
+
   ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
