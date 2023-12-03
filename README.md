@@ -150,7 +150,9 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   <summary>Show the Archive</summary>
 
   #### [Monolog](https://github.com/lambduli/monolog)
-  
+
+  `#semestral project`
+
   Small logic programming language inspired by Prolog.
   Implemented as an AST interpreter in Ruby.
   
@@ -170,6 +172,8 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   ```
   
   #### [SJS](https://github.com/lambduli/sjs)
+
+  `#semestral project`
   
   Very simple compiler from a Lisp-inspired programming language targetting JS.
   Implemented as a parser and a trivial code-gen in Scala.
@@ -188,7 +192,9 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   
   #### [FeenyML](https://github.com/lambduli/FeenyML)
   
-  Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML. Part of my course-work.
+  `#semestral project`
+  
+  Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
   
   ```ml
     function fact (num) ->
