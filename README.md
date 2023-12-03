@@ -96,7 +96,10 @@ It's one of my first _larger_ projects. I wanted to learn about Hindley-Milner t
 Originally, the language used to treat recursion on terms very explicitly. There was a `fix` language construct.
 Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
-```haskell
+<details>
+  <summary>Show example code</summary>
+  
+  ```haskell
   module Main where
 
   { data Result a
@@ -112,6 +115,9 @@ Eventually, I replaced the `fix` with an implicit recursion. The type-checker fi
     } in (Some (fact 5))
   }
 ```
+</details>
+
+
 <!--
 
 ### [Monolog](https://github.com/lambduli/monolog)
