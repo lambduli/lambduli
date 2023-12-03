@@ -122,14 +122,38 @@ Eventually, I replaced the `fix` with an implicit recursion. The type-checker fi
 </details>
 
 
-<!--
+### [Lambda-pie](https://github.com/lambduli/lambda-pie)
 
-### [Monolog](https://github.com/lambduli/monolog)
+Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
+
+<details>
+  <summary>Show Code Example</summary>
+
+  ```
+  λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
+  λ-> >> id a
+        (id a) :: T
+  λ-> >> id b
+        (id b) :: T
+  ```
+</details>
+
+
+### [Lambdas](https://github.com/lambduli/lambdas)
+
+Three simple REPLs for `λ`, `λ->`, and `λ2`.
+
+
+### Archive
+
+<details>
+  <summary>Show the Archive</summary>
+
+#### [Monolog](https://github.com/lambduli/monolog)
 
 Small logic programming language inspired by Prolog.
 Implemented as an AST interpreter in Ruby.
--->
-<!--
+
 ```prolog
   plus(z, N, N).
   plus(s(N), M, s(R)) :- plus(N, M, R).
@@ -144,15 +168,12 @@ Implemented as an AST interpreter in Ruby.
 
   fact(s(s(s(s(s(z))))), F)
 ```
--->
 
-<!--
-### [SJS](https://github.com/lambduli/sjs)
+#### [SJS](https://github.com/lambduli/sjs)
 
 Very simple compiler from a Lisp-inspired programming language targetting JS.
 Implemented as a parser and a trivial code-gen in Scala.
--->
-<!--
+
 ```lisp
   (define fact (n)
     (if (or (= n 0) (= n 1))
@@ -163,13 +184,11 @@ Implemented as a parser and a trivial code-gen in Scala.
 
   (fact 5)
 ```
--->
 
-<!--
-### [FeenyML](https://github.com/lambduli/FeenyML)
 
-Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
-Writen in Haskell using Alex and Happy.
+#### [FeenyML](https://github.com/lambduli/FeenyML)
+
+Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML. Part of my course-work.
 
 ```ml
   function fact (num) ->
@@ -179,27 +198,10 @@ Writen in Haskell using Alex and Happy.
 
   fact(5)
 ```
--->
-
-### [Lambda-pie](https://github.com/lambduli/lambda-pie)
-
-Three better simple REPLs for `λ->`, `λ2`, and `λΠ` written in Haskell.
-
-```
-  λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
-  λ-> >> id a
-        (id a) :: T
-  λ-> >> id b
-        (id b) :: T
-```
 
 
-### [Lambdas](https://github.com/lambduli/lambdas)
+#### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
 
-Three simple REPLs for `λ`, `λ->`, and `λ2` written in Haskell.
+JS DSL for implementing Deterministic Finite State Machines using string template literal.
 
-<!--
-### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
-
-JS DSL for implementing Deterministic Finite State Machines.
--->
+</details>
