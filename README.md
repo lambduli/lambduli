@@ -20,7 +20,7 @@ At this point, I am reworking it from the ground up, formalizing the type system
 I am hoping to make the project public one day.
 
 
-### Detour
+### Detour :four_leaf_clover: :tulip:
 
 Detour is a small proof-checker for _First Order Classical Logic_ *Natural Deduction* proofs in *Fitch-style notation*.
 
