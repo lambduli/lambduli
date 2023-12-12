@@ -20,6 +20,15 @@ At this point, I am reworking it from the ground up, formalizing the type system
 I am hoping to make the project public one day.
 
 
+### Detour
+
+Detour is a small proof-checker for _First Order Classical Logic_ *Natural Deduction* proofs in *Fitch-style notation*.
+
+It is a first step into the area of proof-checkers and (interactive) proof assistants.
+I picked the Fitch-style notation because I find it nice to look at and it seems to fit the constraints of the text-file better.
+The goal is to have a very simple proof-checker. Eventually, I want to make one that supports user-defined inductive data types/syntactic constructs, proof by induction, case analysis and maybe more.
+
+
 ## What I have grown :herb: :evergreen_tree:
 
 ### :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
