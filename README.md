@@ -52,6 +52,29 @@ It is not my goal to make it real-world applicable at all. I just want to explor
 
 I'd like to publish a somewhat detailed write-up soon.
 
+<details>
+  <summary>Show Code Example :computer:</summary>
+
+  ```
+  constants: 0 .
+  
+  axioms: ∀ n Plus(0, n, n)
+        , ∀ n m r Plus(n, m, r) ==> Plus(suc(n), m, suc(r))
+  
+        , ∀ n Times(0, n, 0)
+        , ∀ n m r a [Times(n, m, r) ∧ Plus(r, m, a) ==> Times(suc(n), m, a)]
+  
+        , Fact(0, suc(0))
+        , ∀ n pr r [Fact(n, pr) ∧ Times(suc(n), pr, r) ==> Fact(suc(n), r)]
+        .
+  
+  theorem fact-0-is-one: Fact(0, suc(0)) .
+  
+  theorem fact-one-is-one : Fact(suc(0), suc(0)) .
+  
+  theorem exists-fact-for-one : ∃ n Fact(n, suc(0)) .
+  ```
+</details>
 
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
@@ -84,7 +107,7 @@ So, while the _Minilog_ implements unification according to _Martelli and Montan
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
 
 <details>
-  <summary>Show Code Example</summary>
+  <summary>Show Code Example :computer:</summary>
 
   ```prolog
   plus(z, N, N).
@@ -110,7 +133,7 @@ Originally, the language used to treat recursion on terms very explicitly. There
 Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
 <details>
-  <summary>Show Code Example</summary>
+  <summary>Show Code Example :computer:</summary>
   
   ```haskell
   module Main where
@@ -136,7 +159,7 @@ Eventually, I replaced the `fix` with an implicit recursion. The type-checker fi
 Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 
 <details>
-  <summary>Show Code Example</summary>
+  <summary>Show Code Example :computer:</summary>
 
   ```
   λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
@@ -156,7 +179,7 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 ### Archive
 
 <details>
-  <summary>Show the Archive</summary>
+  <summary>Show the Archive :closed_book:</summary>
 
   <br/>
   All except the last one were done as a semestral project or a course-work during my master's.
