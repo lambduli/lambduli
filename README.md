@@ -56,7 +56,10 @@ I'd like to publish a somewhat detailed write-up soon.
   <summary>Show Code Example :computer:</summary>
 
   ```
-  constants: 0 .
+  constants: zero, suc .
+
+  aliases : 0 = zero
+          , 1 = suc(0) .
   
   axioms: ∀ n Plus(0, n, n)
         , ∀ n m r Plus(n, m, r) ==> Plus(suc(n), m, suc(r))
@@ -64,15 +67,16 @@ I'd like to publish a somewhat detailed write-up soon.
         , ∀ n Times(0, n, 0)
         , ∀ n m r a [Times(n, m, r) ∧ Plus(r, m, a) ==> Times(suc(n), m, a)]
   
-        , Fact(0, suc(0))
+        , Fact(0, 1)
         , ∀ n pr r [Fact(n, pr) ∧ Times(suc(n), pr, r) ==> Fact(suc(n), r)]
         .
   
-  theorem fact-0-is-one: Fact(0, suc(0)) .
+  theorem fact-0-is-1: Fact(0, 1) .
   
-  theorem fact-one-is-one : Fact(suc(0), suc(0)) .
+  theorem fact-1-is-1 : Fact(1, 1) .
   
-  theorem exists-fact-for-one : ∃ n Fact(n, suc(0)) .
+  theorem exists-fact-for-1 : ∃ n Fact(n, 1) .
+
   ```
 </details>
 
