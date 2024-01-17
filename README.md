@@ -56,7 +56,7 @@ I'd like to publish a somewhat detailed write-up soon.
   <summary>Show Code Example :computer:</summary>
 
   ```
-  constants: zero, suc .
+  constants: zero .
 
   aliases : 0 = zero
           , 1 = suc(0) .
