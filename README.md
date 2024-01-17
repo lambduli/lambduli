@@ -76,7 +76,6 @@ I'd like to publish a somewhat detailed write-up soon.
   theorem fact-1-is-1 : Fact(1, 1) .
   
   theorem exists-fact-for-1 : ∃ n Fact(n, 1) .
-
   ```
 </details>
 
