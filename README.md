@@ -87,8 +87,8 @@ It's as small as _Minilog_.
 The main difference the complete search strategy makes is that the language can productively answer queries like `nat(A).` for a knowledge base like the following:
 
 ```prolog
-  nat(s(N)) :- nat(N).
-  nat(z).
+nat(s(N)) :- nat(N).
+nat(z).
 ```
 
 
@@ -191,18 +191,18 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   Implemented as an AST interpreter in Ruby.
   
   ```prolog
-    plus(z, N, N).
-    plus(s(N), M, s(R)) :- plus(N, M, R).
-    
-    times(z, _, z).
-    times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
-    
-    fact(z, s(z)).
-    fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+  plus(z, N, N).
+  plus(s(N), M, s(R)) :- plus(N, M, R).
   
-    :check
+  times(z, _, z).
+  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
   
-    fact(s(s(s(s(s(z))))), F)
+  fact(z, s(z)).
+  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+
+  :check
+
+  fact(s(s(s(s(s(z))))), F)
   ```
   
   #### [SJS](https://github.com/lambduli/sjs)
@@ -211,14 +211,14 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   Implemented as a parser and a trivial code-gen in Scala.
   
   ```lisp
-    (define fact (n)
-      (if (or (= n 0) (= n 1))
-        1
-        (* n (fact (- n 1)))
-      )
+  (define fact (n)
+    (if (or (= n 0) (= n 1))
+      1
+      (* n (fact (- n 1)))
     )
-  
-    (fact 5)
+  )
+
+  (fact 5)
   ```
   
   
@@ -227,12 +227,12 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
   
   ```ml
-    function fact (num) ->
-      if num == 0
-      then 1
-      else num * fact(num - 1);
-  
-    fact(5)
+  function fact (num) ->
+    if num == 0
+    then 1
+    else num * fact(num - 1);
+
+  fact(5)
   ```
   
   
