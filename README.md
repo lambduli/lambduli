@@ -50,10 +50,8 @@ Resin is a small automated theorem prover for _First Order Classical Logic_ buil
 It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
 It is not my goal to make it real-world applicable at all. I just want to explore the concepts related to the _resolution_ and learn more about logic.
 
-I'd like to publish a somewhat detailed write-up soon.
-
 <details>
-  <summary>Show Code Example :computer:</summary>
+  <summary>Show a snippet :computer:</summary>
 
   ```
   constants: zero .
@@ -110,7 +108,7 @@ So, while the _Minilog_ implements unification according to _Martelli and Montan
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
 
 <details>
-  <summary>Show Code Example :computer:</summary>
+  <summary>Show a snippet :computer:</summary>
 
   ```prolog
   plus(z, N, N).
@@ -136,7 +134,7 @@ Originally, the language used to treat recursion on terms very explicitly. There
 Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
 <details>
-  <summary>Show Code Example :computer:</summary>
+  <summary>Show a snippet :computer:</summary>
   
   ```haskell
   module Main where
@@ -162,7 +160,7 @@ Eventually, I replaced the `fix` with an implicit recursion. The type-checker fi
 Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 
 <details>
-  <summary>Show Code Example :computer:</summary>
+  <summary>Show a snippet :computer:</summary>
 
   ```
   λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
