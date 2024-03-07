@@ -79,7 +79,7 @@ It is not my goal to make it real-world applicable at all. I just want to explor
 
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
-Plover is a small automated theorem prover based on a relational language like *Prolog*.
+Plover is a small automated theorem prover based on a logic language like *Prolog*.
 The main idea is to replace *Minilog's* depth-first search strategy with a complete one.
 
 It serves as the first step on my journey to study the topic of formal reasoning and automated and interactive theorem provers and assistants.
@@ -95,14 +95,14 @@ nat(z).
 
 ### [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
-Minilog is an implementation of a small relational programming language.
+Minilog is an implementation of a small logic programming language.
 The primary purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
 
 I have designed the abstract machine and written a description of it for (not only) my students to learn about how such a language works.
 It is meant to inspire and offer a starting point to them should they decide to implement a small subset of Prolog as their course project.
 
-_Minilog_ is not the first project in a line of relational/logic languages.
-In the past, I've implemented a small relational language [Monolog](https://github.com/lambduli/monolog).
+_Minilog_ is not the first project in a line of logic languages.
+In the past, I've implemented a small logic language [Monolog](https://github.com/lambduli/monolog).
 But back then, I didn't know how to implement the _unification_ in a sensible way.
 So, while the _Minilog_ implements unification according to _Martelli and Montanari_,
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
