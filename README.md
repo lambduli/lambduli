@@ -1,7 +1,7 @@
 # :sunflower: :deciduous_tree: :tulip: :blossom: Welcome to my PL garden :rose: :seedling: :hibiscus: :herb:
 
-I think type systems, type theory, logic, and formal reasoning are really interesting topics.
-I like to build small programming languages, theorem provers, and other tools for learning PLT-related concepts.
+I think type systems, type theory, logic, proof theory and formal reasoning are really interesting topics.
+I build small programming languages, theorem provers, and other systems related to PLT concepts.
 
 I sometimes write about the things I learn.
 
@@ -16,7 +16,7 @@ It is a small programming language inspired by Haskell.
 It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
 I have already built a pretty large part of that as a part of my master's thesis.
-At this point, I am reworking it from the ground up, formalizing the type system, and learning more about types.
+At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
 I am hoping to make the project public one day.
 
 
