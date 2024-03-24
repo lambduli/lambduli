@@ -180,19 +180,19 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 ### Archive
 
 <details>
-  <summary>Show the Archive :closed_book:</summary>
+  <summary>Show Older and Smaller Projects :closed_book:</summary>
 
   <br/>
 
-  Small examples of lambda evaluators for my students.
+  A couple of small lambda evaluators as a reference for my students:
 
   - [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb)
   - [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559)
 
 
   <br/>
-  All of the following, except the last one, were done as a semestral project or a course-work during my master's.
-  The last one was just a little thing I did while on a voice call with a friend talking about JavaScript.
+  All of the following, except the last one, were done as a semestral project or coursework during my master's.
+  The last one was a little thing I did while talking about JavaScript on a voice call with a friend.
 
   #### [Monolog](https://github.com/lambduli/monolog)
 
