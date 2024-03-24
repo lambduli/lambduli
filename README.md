@@ -183,7 +183,15 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   <summary>Show the Archive :closed_book:</summary>
 
   <br/>
-  All except the last one were done as a semestral project or a course-work during my master's.
+
+  Small examples of lambda evaluators for my students.
+
+  - [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb)
+  - [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559)
+
+
+  <br/>
+  All of the following, except the last one, were done as a semestral project or a course-work during my master's.
   The last one was just a little thing I did while on a voice call with a friend talking about JavaScript.
 
   #### [Monolog](https://github.com/lambduli/monolog)
@@ -235,10 +243,72 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 
   fact(5)
   ```
+
+
+  #### [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906)
+
+  Call-by-name operational semantics of ISWIM in PLT REDEX.
+
+  ```
+  (((λ unused (λ x (* (+ 1 x) (+ 2 x))))
+    ((λ x (x x)) (λ x (x x))))
+   (+ 3 4))
+
+  :-->>n 72
+  ```
+
+
+  #### [Transaction ISWIM](https://gist.github.com/lambduli/1e5f7714fef5269fbd214c587ff29588)
+
+  ISWIM with transactional memory in PLT REDEX.
+
+  ```
+  (let ([a 80])
+    (let ([b 20])
+      (let ([adjust ;; Invariant: a + b = 100
+             (λ f1
+               (λ f2
+                 (transaction
+                   (begin (set a (f1 a))
+                          (set b (f2 b))
+                          (if0 (+ (+ a b) -100) (λ x x) 1)))))])
+        (begin ((adjust (λ a (* a 2))) (λ b (+ b -50))) ;; abort
+               ((adjust (λ a (+ a -20))) (λ b (* b 2))) ;; commit
+               a))))
+
+  evaluates to 60
+  ```
+
+
+  #### [$wau ISWIM](https://gist.github.com/lambduli/7ab05d917518b666aa93e9cfee374eb1)
+
+  A little experiment with non-strict semantics of ISWIM in PLT REDEX.
   
   
   #### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc)
   
   JS DSL for implementing Deterministic Finite State Machines using string template literal.
+
+  ```javascript
+    const dfsm = require('./dsl').dfsm
+    
+    
+    let factorial = null
+    factorial = dfsm`
+      state default INIT
+      
+      call
+        INIT -> ${(state, num) => num === 0 ? '1' : `${num}`}
+          ${(state, num) => num === 0 ? undefined : factorial.call(num - 1)} .
+      
+      call
+        ${state => state === 'INIT' ? 'NO' : state} -> ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
+          ${(state, num) => num === 0 ? state : factorial.call(num - 1)} .
+    `
+    
+    factorial.call(5)
+    console.log(factorial.state) // 120
+  ```
+
 
 </details>
