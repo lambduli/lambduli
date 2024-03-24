@@ -237,7 +237,7 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
   ```
   
   
-  #### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl)
+  #### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc)
   
   JS DSL for implementing Deterministic Finite State Machines using string template literal.
 
