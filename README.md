@@ -4,6 +4,7 @@ I think type systems, type theory, formal logic, proof theory and formal reasoni
 I build small programming languages, theorem provers, and other systems related to PLT concepts.
 
 ## I sometimes write about the things I learn [:pencil2: **in my digital notepad** :blue_book:](https://github.com/lambduli/writing)
+The latest published post was on [Propositions as Types ⭐](https://github.com/lambduli/writing/blob/main/reports/propositions-as-types.md)
 
 
 ## What I am growing now (in private) :seedling:
