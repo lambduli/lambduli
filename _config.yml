@@ -29,7 +29,8 @@ url: "lambdu.li" # the base hostname & protocol for your site, e.g. http://examp
 github_username:  lambduli
 
 # Build settings
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: vadiole/github-markdown-theme
 plugins:
   - jekyll-feed
 
