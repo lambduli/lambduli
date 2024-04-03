@@ -33,6 +33,7 @@ github_username:  lambduli
 remote_theme: vadiole/github-markdown-theme
 plugins:
   - jekyll-feed
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.
