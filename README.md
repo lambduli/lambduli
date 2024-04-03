@@ -3,8 +3,8 @@
 I think type systems, type theory, formal logic, proof theory and formal reasoning are really interesting topics.
 I build small programming languages, theorem provers, and other systems related to PLT concepts.
 
-## I sometimes write about the things I learn [:pencil2: **in my digital notepad** :blue_book:](https://github.com/lambduli/writing)
-The latest published post was a report on [Propositions as Types ⭐](https://github.com/lambduli/writing/blob/main/reports/propositions-as-types.md)
+## I sometimes write about the things I learn [:pencil2: **in my digital notepad** :blue_book:](http://writing.lambdu.li)
+The latest published post was a report on [Propositions as Types ⭐](http://writing.lambdu.li/reports/propositions-as-types)
 
 
 ## What I am growing now (in private) :seedling:
