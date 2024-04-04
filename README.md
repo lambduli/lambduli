@@ -23,11 +23,11 @@ I am hoping to make the project public one day.
 
 ### Detour :four_leaf_clover: :tulip:
 
-Detour is a small proof-checker for _First Order Logic_ *Natural Deduction* proofs in *Fitch-style notation*.
+Detour is a small proof-checker for a mix of _Second-order Propositional Logic_ and _First-order Predicate Logic_ *Natural Deduction* proofs in *Fitch-style notation*.
 
 It is a first step into the area of proof-checkers and (interactive) proof assistants.
-I picked the Fitch-style notation because I find it nice to look at and it seems to fit the constraints of the text-file better.
-The goal is to have a very simple proof-checker. Eventually, I want to make one that supports user-defined inductive data types/syntactic constructs, proof by induction, case analysis and maybe more.
+I picked the Fitch-style notation because I find it nice to look at and it seems to fit the constraints of the text file better.
+The goal is to have a very simple proof-checker that supports user-defined inductive data types/syntactic constructs, proof by induction, case analysis and maybe more.
 
 
 ## What I have grown :herb: :evergreen_tree:
