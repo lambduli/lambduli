@@ -30,7 +30,7 @@ github_username:  lambduli
 
 # Build settings
 # theme: jekyll-theme-cayman
-remote_theme: vadiole/github-markdown-theme
+remote_theme: ellapollack/printy
 plugins:
   - jekyll-feed
   - jemoji
