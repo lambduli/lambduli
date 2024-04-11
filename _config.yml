@@ -34,6 +34,10 @@ remote_theme: vadiole/github-markdown-theme
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-favicon
+
+favicon:
+  source: imgs/Lambda-large.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.
