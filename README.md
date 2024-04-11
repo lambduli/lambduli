@@ -171,14 +171,14 @@ Three simple REPLs for `λ`, `λ->`, and `λ2`.
 
 A couple of small lambda evaluators as a reference for my students:
 
-- [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb)
-- [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559)
+- [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb) :mushroom:
+- [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559) :mushroom:
 
 
 All of the following, except the last one, were done as a semestral project or coursework during my master's.
 The last one was a little thing I did while talking about JavaScript on a voice call with a friend.
 
-#### [Monolog](https://github.com/lambduli/monolog)
+#### [Monolog](https://github.com/lambduli/monolog) :maple_leaf:
 
 Small logic programming language inspired by Prolog.
 Implemented as an AST interpreter in Ruby.
@@ -198,7 +198,7 @@ fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 fact(s(s(s(s(s(z))))), F)
 ```
 
-#### [SJS](https://github.com/lambduli/sjs)
+#### [SJS](https://github.com/lambduli/sjs) :maple_leaf:
 
 A simple toy compiler from a Lisp-inspired programming language targetting JS.
 Implemented as a parser and a trivial code-gen in Scala.
@@ -215,7 +215,7 @@ Implemented as a parser and a trivial code-gen in Scala.
 ```
 
 
-#### [FeenyML](https://github.com/lambduli/FeenyML)
+#### [FeenyML](https://github.com/lambduli/FeenyML) :maple_leaf:
 
 Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
 
@@ -229,7 +229,7 @@ fact(5)
 ```
 
 
-#### [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906)
+#### [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906) :mushroom:
 
 Call-by-name operational semantics of ISWIM in PLT REDEX.
 
@@ -242,7 +242,7 @@ Call-by-name operational semantics of ISWIM in PLT REDEX.
 ```
 
 
-#### [Transaction ISWIM](https://gist.github.com/lambduli/1e5f7714fef5269fbd214c587ff29588)
+#### [Transaction ISWIM](https://gist.github.com/lambduli/1e5f7714fef5269fbd214c587ff29588) :mushroom:
 
 ISWIM with transactional memory in PLT REDEX.
 
@@ -264,12 +264,12 @@ evaluates to 60
 ```
 
 
-#### [$wau ISWIM](https://gist.github.com/lambduli/7ab05d917518b666aa93e9cfee374eb1)
+#### [$wau ISWIM](https://gist.github.com/lambduli/7ab05d917518b666aa93e9cfee374eb1) :mushroom:
 
 A little experiment with non-strict semantics of ISWIM in PLT REDEX.
 
 
-#### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc)
+#### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc) :mushroom:
 
 JS DSL for implementing Deterministic Finite State Machines using string template literal.
 
