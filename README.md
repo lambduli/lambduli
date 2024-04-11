@@ -97,7 +97,7 @@ nat(z).
 Minilog is an implementation of a small logic programming language.
 The primary purpose of it is to present a simple abstract machine that can be easily implemented in any language and can serve as an aid when making the intuition about how such a language works.
 
-I have designed the abstract machine and written a description of it for (not only) my students to learn about how such a language works.
+I have designed the abstract machine and written a [description](https://github.com/lambduli/minilog/blob/main/WRITEUP.md) of it for (not only) my students to learn about how such a language works.
 It is meant to inspire and offer a starting point to them should they decide to implement a small subset of Prolog as their course project.
 
 _Minilog_ is not the first project in a line of logic languages.
