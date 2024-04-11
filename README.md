@@ -51,32 +51,30 @@ Resin is a small automated theorem prover for _First Order Classical Logic_ buil
 It's another step on my journey through the topic of formal reasoning and implementing theorem provers and proof assistants.
 It is not my goal to make it real-world applicable at all. I just want to explore the concepts related to the _resolution_ and learn more about logic.
 
-<details>
-  <summary>Show a snippet :computer:</summary>
 
-  ```
-  constants: zero .
+```
+constants: zero .
 
-  aliases : 0 = zero
-          , 1 = suc(0) .
-  
-  axioms: ∀ n Plus(0, n, n)
-        , ∀ n m r Plus(n, m, r) ==> Plus(suc(n), m, suc(r))
-  
-        , ∀ n Times(0, n, 0)
-        , ∀ n m r a [Times(n, m, r) ∧ Plus(r, m, a) ==> Times(suc(n), m, a)]
-  
-        , Fact(0, 1)
-        , ∀ n pr r [Fact(n, pr) ∧ Times(suc(n), pr, r) ==> Fact(suc(n), r)]
-        .
-  
-  theorem fact-0-is-1: Fact(0, 1) .
-  
-  theorem fact-1-is-1 : Fact(1, 1) .
-  
-  theorem exists-fact-for-1 : ∃ n Fact(n, 1) .
-  ```
-</details>
+aliases : 0 = zero
+        , 1 = suc(0) .
+
+axioms: ∀ n Plus(0, n, n)
+      , ∀ n m r Plus(n, m, r) ==> Plus(suc(n), m, suc(r))
+
+      , ∀ n Times(0, n, 0)
+      , ∀ n m r a [Times(n, m, r) ∧ Plus(r, m, a) ==> Times(suc(n), m, a)]
+
+      , Fact(0, 1)
+      , ∀ n pr r [Fact(n, pr) ∧ Times(suc(n), pr, r) ==> Fact(suc(n), r)]
+      .
+
+theorem fact-0-is-1: Fact(0, 1) .
+
+theorem fact-1-is-1 : Fact(1, 1) .
+
+theorem exists-fact-for-1 : ∃ n Fact(n, 1) .
+```
+
 
 ### [Plover](https://github.com/lambduli/plover) :rose:
 
@@ -108,20 +106,17 @@ But back then, I didn't know how to implement the _unification_ in a sensible wa
 So, while the _Minilog_ implements unification according to _Martelli and Montanari_,
 the first project keeps around sort of a _unification context_ making it very impractical and inefficient.
 
-<details>
-  <summary>Show a snippet :computer:</summary>
 
-  ```prolog
-  plus(z, N, N).
-  plus(s(N), M, s(R)) :- plus(N, M, R).
+```prolog
+plus(z, N, N).
+plus(s(N), M, s(R)) :- plus(N, M, R).
 
-  times(z, _, z).
-  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
+times(z, _, z).
+times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
 
-  fact(z, s(z)).
-  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
-  ```
-</details>
+fact(z, s(z)).
+fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+```
 
 
 ### [Frea](https://github.com/lambduli/frea) :chestnut:
@@ -134,182 +129,167 @@ It's one of my first _larger_ projects. I wanted to learn about Hindley-Milner t
 Originally, the language used to treat recursion on terms very explicitly. There was a `fix` language construct.
 Eventually, I replaced the `fix` with an implicit recursion. The type-checker first splits the definitions into groups of mutually recursive definitions and finds a topological ordering on them. This makes it possible to infer the types as polymorphic as possible.
 
-<details>
-  <summary>Show a snippet :computer:</summary>
   
-  ```haskell
-  module Main where
+```haskell
+module Main where
 
-  { data Result a
-      = None
-      | Some a
+{ data Result a
+    = None
+    | Some a
 
-  ; let
-    { zero n = (n == 0)
-    ; dec n = (n - 1)
-    ; rec fact n =  if (zero n)
-                    then 1
-                    else (n * (fact (dec n)))
-    } in (Some (fact 5))
-  }
-  ```
-</details>
+; let
+  { zero n = (n == 0)
+  ; dec n = (n - 1)
+  ; rec fact n =  if (zero n)
+                  then 1
+                  else (n * (fact (dec n)))
+  } in (Some (fact 5))
+}
+```
 
 
-### [Lambda-pie](https://github.com/lambduli/lambda-pie)
+### [Lambda-pie](https://github.com/lambduli/lambda-pie) :palm_tree:
 
 Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 
-<details>
-  <summary>Show a snippet :computer:</summary>
 
-  ```
-  λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
-  λ-> >> id a
-        (id a) :: T
-  λ-> >> id b
-        (id b) :: T
-  ```
-</details>
+```
+λ-> >> assume (id :: T -> T) (T :: *) (a :: T) (b :: T)
+λ-> >> id a
+      (id a) :: T
+λ-> >> id b
+      (id b) :: T
+```
 
 
-### [Lambdas](https://github.com/lambduli/lambdas)
+### [Lambdas](https://github.com/lambduli/lambdas) :ear_of_rice:
 
 Three simple REPLs for `λ`, `λ->`, and `λ2`.
 
 
-### Archive
+### Older and Smaller Projects :fallen_leaf:
 
-<details>
-  <summary>Show Older and Smaller Projects :closed_book:</summary>
+A couple of small lambda evaluators as a reference for my students:
 
-  <br/>
-
-  A couple of small lambda evaluators as a reference for my students:
-
-  - [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb)
-  - [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559)
+- [A Small λ-evaluator Written in Racket](https://gist.github.com/lambduli/b07c8ce55aa182e3c809f7814eb4feeb)
+- [A Small λ-evaluator Written in Elm](https://gist.github.com/lambduli/aa3a1a5ac2716e13cf4351006f0ab559)
 
 
-  <br/>
-  All of the following, except the last one, were done as a semestral project or coursework during my master's.
-  The last one was a little thing I did while talking about JavaScript on a voice call with a friend.
+All of the following, except the last one, were done as a semestral project or coursework during my master's.
+The last one was a little thing I did while talking about JavaScript on a voice call with a friend.
 
-  #### [Monolog](https://github.com/lambduli/monolog)
+#### [Monolog](https://github.com/lambduli/monolog)
 
-  Small logic programming language inspired by Prolog.
-  Implemented as an AST interpreter in Ruby.
-  
-  ```prolog
-  plus(z, N, N).
-  plus(s(N), M, s(R)) :- plus(N, M, R).
-  
-  times(z, _, z).
-  times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
-  
-  fact(z, s(z)).
-  fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+Small logic programming language inspired by Prolog.
+Implemented as an AST interpreter in Ruby.
 
-  :check
+```prolog
+plus(z, N, N).
+plus(s(N), M, s(R)) :- plus(N, M, R).
 
-  fact(s(s(s(s(s(z))))), F)
-  ```
-  
-  #### [SJS](https://github.com/lambduli/sjs)
+times(z, _, z).
+times(s(N), M, A) :- times(N, M, R), plus(R, M, A).
 
-  A simple toy compiler from a Lisp-inspired programming language targetting JS.
-  Implemented as a parser and a trivial code-gen in Scala.
-  
-  ```lisp
-  (define fact (n)
-    (if (or (= n 0) (= n 1))
-      1
-      (* n (fact (- n 1)))
-    )
+fact(z, s(z)).
+fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
+
+:check
+
+fact(s(s(s(s(s(z))))), F)
+```
+
+#### [SJS](https://github.com/lambduli/sjs)
+
+A simple toy compiler from a Lisp-inspired programming language targetting JS.
+Implemented as a parser and a trivial code-gen in Scala.
+
+```lisp
+(define fact (n)
+  (if (or (= n 0) (= n 1))
+    1
+    (* n (fact (- n 1)))
   )
+)
 
-  (fact 5)
-  ```
+(fact 5)
+```
+
+
+#### [FeenyML](https://github.com/lambduli/FeenyML)
+
+Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
+
+```ml
+function fact (num) ->
+  if num == 0
+  then 1
+  else num * fact(num - 1);
+
+fact(5)
+```
+
+
+#### [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906)
+
+Call-by-name operational semantics of ISWIM in PLT REDEX.
+
+```
+(((λ unused (λ x (* (+ 1 x) (+ 2 x))))
+  ((λ x (x x)) (λ x (x x))))
+ (+ 3 4))
+
+:-->>n 72
+```
+
+
+#### [Transaction ISWIM](https://gist.github.com/lambduli/1e5f7714fef5269fbd214c587ff29588)
+
+ISWIM with transactional memory in PLT REDEX.
+
+```
+(let ([a 80])
+  (let ([b 20])
+    (let ([adjust ;; Invariant: a + b = 100
+           (λ f1
+             (λ f2
+               (transaction
+                 (begin (set a (f1 a))
+                        (set b (f2 b))
+                        (if0 (+ (+ a b) -100) (λ x x) 1)))))])
+      (begin ((adjust (λ a (* a 2))) (λ b (+ b -50))) ;; abort
+             ((adjust (λ a (+ a -20))) (λ b (* b 2))) ;; commit
+             a))))
+
+evaluates to 60
+```
+
+
+#### [$wau ISWIM](https://gist.github.com/lambduli/7ab05d917518b666aa93e9cfee374eb1)
+
+A little experiment with non-strict semantics of ISWIM in PLT REDEX.
+
+
+#### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc)
+
+JS DSL for implementing Deterministic Finite State Machines using string template literal.
+
+```javascript
+  const dfsm = require('./dsl').dfsm
   
   
-  #### [FeenyML](https://github.com/lambduli/FeenyML)
-  
-  Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
-  
-  ```ml
-  function fact (num) ->
-    if num == 0
-    then 1
-    else num * fact(num - 1);
-
-  fact(5)
-  ```
-
-
-  #### [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906)
-
-  Call-by-name operational semantics of ISWIM in PLT REDEX.
-
-  ```
-  (((λ unused (λ x (* (+ 1 x) (+ 2 x))))
-    ((λ x (x x)) (λ x (x x))))
-   (+ 3 4))
-
-  :-->>n 72
-  ```
-
-
-  #### [Transaction ISWIM](https://gist.github.com/lambduli/1e5f7714fef5269fbd214c587ff29588)
-
-  ISWIM with transactional memory in PLT REDEX.
-
-  ```
-  (let ([a 80])
-    (let ([b 20])
-      (let ([adjust ;; Invariant: a + b = 100
-             (λ f1
-               (λ f2
-                 (transaction
-                   (begin (set a (f1 a))
-                          (set b (f2 b))
-                          (if0 (+ (+ a b) -100) (λ x x) 1)))))])
-        (begin ((adjust (λ a (* a 2))) (λ b (+ b -50))) ;; abort
-               ((adjust (λ a (+ a -20))) (λ b (* b 2))) ;; commit
-               a))))
-
-  evaluates to 60
-  ```
-
-
-  #### [$wau ISWIM](https://gist.github.com/lambduli/7ab05d917518b666aa93e9cfee374eb1)
-
-  A little experiment with non-strict semantics of ISWIM in PLT REDEX.
-  
-  
-  #### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc)
-  
-  JS DSL for implementing Deterministic Finite State Machines using string template literal.
-
-  ```javascript
-    const dfsm = require('./dsl').dfsm
+  let factorial = null
+  factorial = dfsm`
+    state default INIT
     
+    call
+      INIT -> ${(state, num) => num === 0 ? '1' : `${num}`}
+        ${(state, num) => num === 0 ? undefined : factorial.call(num - 1)} .
     
-    let factorial = null
-    factorial = dfsm`
-      state default INIT
-      
-      call
-        INIT -> ${(state, num) => num === 0 ? '1' : `${num}`}
-          ${(state, num) => num === 0 ? undefined : factorial.call(num - 1)} .
-      
-      call
-        ${state => state === 'INIT' ? 'NO' : state} -> ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
-          ${(state, num) => num === 0 ? state : factorial.call(num - 1)} .
-    `
-    
-    factorial.call(5)
-    console.log(factorial.state) // 120
-  ```
-
-
-</details>
+    call
+      ${state => state === 'INIT' ? 'NO' : state} -> ${(state, num) => num === 0 ? state : `${Number(state) * num}`}
+        ${(state, num) => num === 0 ? state : factorial.call(num - 1)} .
+  `
+  
+  factorial.call(5)
+  console.log(factorial.state) // 120
+```
