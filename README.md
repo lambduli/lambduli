@@ -26,7 +26,7 @@ I am hoping to make the project public one day.
 Detour is a small proof-checker for a mix of _Second-order Propositional Logic_ and _First-order Predicate Logic_ *Natural Deduction* proofs in *Fitch-style notation*.
 
 It is a first step into the area of proof-checkers and (interactive) proof assistants.
-I picked the Fitch-style notation because I find it nice to look at and it seems to fit the constraints of the text file better.
+I picked the Fitch-style notation because I find it nice to look at.
 The goal is to have a very simple proof-checker that supports user-defined inductive data types/syntactic constructs, proof by induction, case analysis and maybe more.
 
 
