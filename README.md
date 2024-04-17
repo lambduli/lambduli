@@ -29,6 +29,8 @@ It is a first step into the area of proof-checkers and (interactive) proof assis
 I picked the Fitch-style notation because I find it nice to look at.
 The goal is to have a very simple proof-checker that supports user-defined inductive data types/syntactic constructs, proof by induction, case analysis and maybe more.
 
+[An example proof—a proof of totality of the addition on natural numbers.](https://gist.github.com/lambduli/d99a935f00845b910402d73976fa41a5)
+
 
 ## What I have grown :herb: :evergreen_tree:
 
