@@ -10,13 +10,13 @@ The latest published post was a report on [Propositions as Types ⭐](http://wri
 ## What I am growing now (in private) :seedling:
 
 
-### [Glask](https://github.com/lambduli/glask) :blossom: :cactus:
+### Glask :blossom: :cactus:
 
 Glask is my current, long-term project.
 It is a small programming language inspired by Haskell.
 It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
 
-I have already built a pretty large part of that as a part of my master's thesis.
+I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
 At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
 I am hoping to make the project public one day.
 
