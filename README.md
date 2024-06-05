@@ -271,7 +271,7 @@ evaluates to 60
 A little experiment with non-strict semantics of ISWIM in PLT REDEX.
 
 
-#### [DFSM-DSL](https://gist.github.com/lambduli/68b9e1543fa557cbf75282e8a1adf0bc) :mushroom:
+#### [DFSM-DSL](https://github.com/lambduli/dfsm-dsl) :mushroom:
 
 JS DSL for implementing Deterministic Finite State Machines using string template literal.
 
