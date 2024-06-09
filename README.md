@@ -7,19 +7,7 @@ I build small programming languages, theorem provers, and other systems related 
 The latest published post was a report on [Propositions as Types ⭐](http://writing.lambdu.li/reports/propositions-as-types)
 
 
-## What I am growing now (in private) :seedling:
-
-
-### Glask :blossom: :cactus:
-
-Glask is my current, long-term project.
-It is a small programming language inspired by Haskell.
-It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
-
-I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
-At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
-I am hoping to make the project public one day.
-
+## What I am growing now :seedling:
 
 ### [Detour](https://github.com/lambduli/detour) :four_leaf_clover: :tulip:
 
@@ -32,6 +20,17 @@ The goal is to have a very simple proof-checker that supports user-defined induc
 [An example proof—a proof of totality of the addition on natural numbers.](https://gist.github.com/lambduli/d99a935f00845b910402d73976fa41a5)
 
 
+### Glask :blossom: :cactus:
+
+Glask is my long-term project. I am not working on it right now but I am hoping to finish it one day.
+It is a small programming language inspired by Haskell.
+It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+
+I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
+At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
+I am hoping to make the project public one day.
+
+
 ## What I have grown :herb: :evergreen_tree:
 
 ### :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
@@ -39,8 +38,6 @@ The goal is to have a very simple proof-checker that supports user-defined induc
 Lambdulus is a tool for learning λ-calculus interactively.
 It runs locally in any modern browser and enables you to experience λ-calculus as a programming language.
 
-I have a strong appreciation for teaching tools.
-This one is the first one I developed.
 It's being used at FIT CTU in Prague for teaching λ-calculus in a course on programming paradigms.
 
 <!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
