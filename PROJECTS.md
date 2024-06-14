@@ -1,5 +1,16 @@
 # Past Projects
 
+## Glask :blossom: :cactus:
+
+Glask is my long-term project. I am not working on it right now but I am hoping to finish it one day.
+It is a small programming language inspired by Haskell.
+It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+
+I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
+At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
+I am hoping to make the project public one day.
+
+
 ## :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
 
 Lambdulus is a tool for learning λ-calculus interactively.
