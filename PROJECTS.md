@@ -142,3 +142,6 @@ Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 ## [Lambdas](https://github.com/lambduli/lambdas) :ear_of_rice:
 
 Three simple REPLs for `λ`, `λ->`, and `λ2`.
+
+
+# [Older and Smaller Projects](OLDER_PROJECTS.md) :fallen_leaf:
