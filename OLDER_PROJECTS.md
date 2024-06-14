@@ -9,7 +9,7 @@ A couple of small lambda evaluators as a reference for my students:
 All of the following, except the last one, were done as a semestral project or coursework during my master's.
 The last one was a little thing I did while talking about JavaScript on a voice call with a friend.
 
-#### [Monolog](https://github.com/lambduli/monolog) :maple_leaf:
+## [Monolog](https://github.com/lambduli/monolog) :maple_leaf:
 
 Small logic programming language inspired by Prolog.
 Implemented as an AST interpreter in Ruby.
