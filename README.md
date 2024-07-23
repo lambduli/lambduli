@@ -7,7 +7,7 @@ I build small programming languages, theorem provers, and other systems related 
 The latest published post was a report on [Propositions as Types ⭐](http://writing.lambdu.li/reports/propositions-as-types)
 
 ## My Current Project
-I am currently working on a toy proof assistant for a little bit more than FOL :seedling:
+I am currently working on a PL oriented proof assistant :seedling:
 
 ## More Writing
 I am also working on a page about implementing various small type systems and languages. Hopefully to be seen soon.
