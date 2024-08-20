@@ -46,6 +46,7 @@ Implemented as a parser and a trivial code-gen in Scala.
 ```
 
 
+<!--
 ## [FeenyML](https://github.com/lambduli/FeenyML) :maple_leaf:
 
 Interpreter and (incomplete) VM for a small programming language inspired by Feeny and ML.
@@ -58,6 +59,7 @@ function fact (num) ->
 
 fact(5)
 ```
+-->
 
 
 ## [Call-by-Name ISWIM](https://gist.github.com/lambduli/662c6d934d3e8cd8670670d4468ee906) :mushroom:
