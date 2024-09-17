@@ -4,10 +4,10 @@
 I build small programming languages, theorem provers, and other systems related to PLT concepts.
 
 ## I sometimes write about the things I learn [:pencil2: **in my digital notepad** :blue_book:](http://reading.lambdu.li)
-The latest published post was a report on [Propositions as Types ⭐](http://reading.lambdu.li/reports/propositions-as-types)
+The latest published post was a report on [Propositions as Types ⭐](http://reading.lambdu.li/reports/propositions-as-types) and the last book I read was *The Little Typer ⭐*.
 
-## I am currently working on a PL oriented proof assistant :seedling:
+<!-- ## I am currently working on a PL oriented proof assistant :seedling: -->
 
-## I am also working on a page about implementing various small type systems and languages. Hopefully to be seen soon.
+<!-- ## I am also working on a page about implementing various small type systems and languages. Hopefully to be seen soon. -->
 
 ## [You can take a look at my past projects](PROJECTS.md) :herb: :evergreen_tree:
