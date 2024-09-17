@@ -10,6 +10,4 @@ The latest published post was a report on [Propositions as Types ⭐](http://rea
 
 ## I am also working on a page about implementing various small type systems and languages. Hopefully to be seen soon.
 
-## My selected projects:
-
 ## [You can take a look at my past projects](PROJECTS.md) :herb: :evergreen_tree:
