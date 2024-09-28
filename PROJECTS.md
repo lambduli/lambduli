@@ -3,6 +3,11 @@
 
 ## Theorem Provers
 
+### [Detour](https://github.com/lambduli/detour) :pear: :tomato:
+
+A toy proof-checker for first-order predicate logic natural deduction with Fitch-style notation.
+
+
 ### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
 
 Resin is a small automated theorem prover for _First Order Classical Logic_ built on *resolution*.
