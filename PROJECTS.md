@@ -1,27 +1,9 @@
 # Past Projects
 
-## Glask :blossom: :cactus:
 
-Glask is my long-term project. I am not working on it right now but I am hoping to finish it one day.
-It is a small programming language inspired by Haskell.
-It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+## Theorem Provers
 
-I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
-At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
-I am hoping to make the project public one day.
-
-
-## :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
-
-Lambdulus is a tool for learning λ-calculus interactively.
-It runs locally in any modern browser and enables you to experience λ-calculus as a programming language.
-
-It's being used at FIT CTU in Prague for teaching λ-calculus in a course on programming paradigms.
-
-<!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
-
-
-## [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
+### [Resin](https://github.com/lambduli/resin) :hibiscus: :tulip:
 
 Resin is a small automated theorem prover for _First Order Classical Logic_ built on *resolution*.
 
@@ -52,7 +34,6 @@ theorem fact-1-is-1 : Fact(1, 1) .
 theorem exists-fact-for-1 : ∃ n Fact(n, 1) .
 ```
 
-
 ## [Plover](https://github.com/lambduli/plover) :rose:
 
 Plover is a small automated theorem prover based on a logic language like *Prolog*.
@@ -68,6 +49,9 @@ nat(s(N)) :- nat(N).
 nat(z).
 ```
 
+
+
+## Logic Languages
 
 ## [Minilog](https://github.com/lambduli/minilog) :cherry_blossom:
 
@@ -96,7 +80,21 @@ fact(s(N), R) :- fact(N, PR), times(s(N), PR, R).
 ```
 
 
-## [Frea](https://github.com/lambduli/frea) :chestnut:
+
+## Functional Statically Typed Languages
+
+### Glask :blossom: :cactus:
+
+Glask is my long-term project. I am not working on it right now but I am hoping to finish it one day.
+It is a small programming language inspired by Haskell.
+It has type classes, higher-rank polymorphism, row polymorphism and other interesting features.
+
+I have already [built a pretty large part of that as a part of my master's thesis](https://github.com/lambduli/original-glask).
+At this point, I am reworking it from the ground up, formalizing the type system, and learning more things.
+I am hoping to make the project public one day.
+
+
+### [Frea](https://github.com/lambduli/frea) :chestnut:
 
 Small programming language with HM type inference, higher-kinded types, and lazy evaluation.
 Implemented as an AST interpreter in Haskell.
@@ -125,7 +123,9 @@ module Main where
 ```
 
 
-## [Lambda-pie](https://github.com/lambduli/lambda-pie) :palm_tree:
+## Lambda Calculi
+
+### [Lambda-pie](https://github.com/lambduli/lambda-pie) :palm_tree:
 
 Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 
@@ -139,9 +139,21 @@ Three better simple REPLs for `λ->`, `λ2`, and `λΠ`.
 ```
 
 
-## [Lambdas](https://github.com/lambduli/lambdas) :ear_of_rice:
+### [Lambdas](https://github.com/lambduli/lambdas) :ear_of_rice:
 
 Three simple REPLs for `λ`, `λ->`, and `λ2`.
+
+
+### :school: [Lambdulus](https://github.com/lambdulus/frontend) :evergreen_tree:
+
+Lambdulus is a tool for learning λ-calculus interactively.
+It runs locally in any modern browser and enables you to experience λ-calculus as a programming language.
+
+It's being used at FIT CTU in Prague for teaching λ-calculus in a course on programming paradigms.
+
+<!-- ![Screenshot of the part of the Lambdulus web interface](./imgs/lambdulus-frontend-fact.png) -->
+
+
 
 
 ## [Older and Smaller Projects](OLDER_PROJECTS.md) :fallen_leaf:
